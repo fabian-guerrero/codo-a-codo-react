@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fabian Guerrero ID Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <form class="theme-selector">
+        <img src="images/sun.png" alt="Sun" />
+        <input onclick="toggle(this.form)" id="checkbox" name="checkbox" type="checkbox" />
+        <label for="checkbox">Toggle</label>
+        <img src="images/moon.png" alt="Moon" />
+    </form>
+    <div class="card-wrapper">
+        <div class="card-image-wrapper">
+            <div class="card-image">
+                <img src="images/profile-img.jpg" alt="Fabian Guerrero profile image" />
+            </div>
+            <div class="svg-wrapper">
+                <svg height="220" width="220" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="110" cy="110" r="105" class="shape" height="220" width="220" />
+                </svg>
+            </div>
+        </div>
+        <p class="name">Fabian Guerrero</p>
+        <p class="position">Front End UI Developer</p>
+        <p class="description">
+            Quisque hendrerit mi et vehicula mollis. Cras nec eros ac tellus
+            tincidunt ornare. Nulla lacinia ipsum in velit vulputate, dignissim
+            ultrices lorem bibendum. Ut tincidunt aliquet eros, quis consectetur
+            turpis semper vel. Morbi nisl metus, varius egestas lacinia ut, commodo
+            sed massa. Nulla vel nunc ante. Phasellus nec risus eu ante facilisis.
+        </p>
+        <a class="mailto-link" href="mailto:guerrerofabian1985@gmail.com">guerrerofabian1985@gmail.com</a>
+        <div class="social-networks">
+            <a href="https://github.com/fabian-guerrero" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://github.com/fabian-guerrero" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://github.com/fabian-guerrero" target="_blank"><i class="bi bi-dribbble"></i></a>
+            <a href="https://github.com/fabian-guerrero" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/fabian-guerrero" target="_blank"><i class="bi bi-github"></i></a>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
