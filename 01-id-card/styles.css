@@ -41,6 +41,7 @@ body {
     background-color: rgb(var(--card-bg-color));
     box-shadow: 0px 4px 75px rgba(var(--card-shadow), 0.25);
     text-align: center;
+    opacity: 0;
 }
 
 .card-image-wrapper:hover .svg-wrapper .shape {

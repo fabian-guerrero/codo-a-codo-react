@@ -11,7 +11,12 @@ window.onload = function () {
 
   var timeline = new TimelineMax();
   timeline
-    .from(".card-wrapper", { y: -100, autoAlpha: 0 }, 0.5)
+    .fromTo(
+      ".card-wrapper",
+      { y: -100, autoAlpha: 0 },
+      { y: 0, autoAlpha: 1 },
+      0.5
+    )
     .from(".card-image-wrapper", { y: -50, autoAlpha: 0 }, 1)
     .from(".name", { y: -50, autoAlpha: 0 }, 1.2)
     .from(".position", { y: -50, autoAlpha: 0 }, 1.4)
